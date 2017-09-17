@@ -73,9 +73,7 @@ var $ = jQuery;
 $(document).ready(function(){
 
     $("#flipbook").turn({
-        width: 400,
-        height: 300,
-        autoCenter: true
-    });
-
+        width: 960,
+        height: 600
+    },"center");
 });

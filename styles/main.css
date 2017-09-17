@@ -2,17 +2,21 @@ body {
   overflow: hidden; }
 
 #flipbook {
-  width: 400px;
-  height: 300px; }
+  width: 960px;
+  height: 600px; }
+
+#flipbook p {
+  text-align: justify;
+  margin: 15px;
+  font-size: 16px; }
 
 #flipbook .cover {
   background-color: red; }
 
 #flipbook .page {
-  width: 400px;
-  height: 300px;
+  width: 480px;
+  height: 600px;
   background-color: white;
-  line-height: 300px;
   font-size: 20px;
   text-align: center; }
 
