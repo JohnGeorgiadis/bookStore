@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         tasks: ['coffee']
       },
       concat: {
-        files: ['scripts/hello.js','scripts/main.js'],
+        files: ['scripts/main.js','scripts/turn.js'],
         tasks: ['concat']
       },
       uglify: {
