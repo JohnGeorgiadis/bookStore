@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         separator: '\n/*next file*/\n\n'
       },
       dist: {
-        src: ['scripts/hello.js', 'scripts/main.js'],
+        src: ['scripts/turn.js', 'scripts/main.js'],
         dest: 'scripts/built.js'
       }
     },
