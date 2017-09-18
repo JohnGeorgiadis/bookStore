@@ -4,6 +4,8 @@
     <title>Book Store</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="206540289883972" />
+
     <!--css styles-->
     <link rel="stylesheet" href="styles/main.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -17,7 +19,33 @@
     <script type="text/javascript" src="scripts/turn.js"></script>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '206540289883972',
+            xfbml      : true,
+            version    : 'v2.10'
+        });
+        FB.AppEvents.logPageView();
+    };
 
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+</div>
 <div id="flipbook">
     <div class="hard cover"> <img src="./img/cover.jpg"></div>
     <div class="hard back-cover"></div>
@@ -33,6 +61,9 @@
     <div> Page 2 </div>
     <div> Page 3 </div>
     <div> Page 4 </div>
+    <div>
+        <button id="shareBtn">SHARE</button>
+    </div>
     <div class="hard back-cover"></div>
     <div class="hard back-cover"></div>
 </div>

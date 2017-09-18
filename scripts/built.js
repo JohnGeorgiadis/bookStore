@@ -76,4 +76,5 @@ $(document).ready(function(){
         width: 960,
         height: 600
     },"center");
+
 });
