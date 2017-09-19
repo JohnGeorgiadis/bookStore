@@ -14,9 +14,10 @@
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--js files-->
-    <script type="text/javascript" src="./scripts/main.js"></script>
+    <script type="text/javascript" src="./scripts/main.js" async></script>
     <!--turn.js-->
-    <script type="text/javascript" src="scripts/turn.js"></script>
+    <script type="text/javascript" src="scripts/turn.js" async></script>
+
 </head>
 <body>
 <div id="fb-root"></div>
@@ -40,25 +41,27 @@
 </script>
 
 
+<section class="offer-place">
+    <img src="./img/header-offer.jpg" class="offer">
+</section>
 
-<div id="flipbook">
-    <div class="hard cover"> <img src="./img/cover.jpg"></div>
-    <div class="hard back-cover"></div>
-    <div>
-        <p>
-            Sklepik dla lujów PPP (Piwo, Papierosy, Petardy lub, jak nieoficjalnie żartował jej target: Pierdolić, Pić, rozPierdalać) Mańki Badziewie. Stacja kolejowa zabita dechami, pięć salonów paznokci, siedem solariów… Jest zakład pogrzebowy „Śmiertex. Dyskretne i tanie przewozy przez Acheront” pana Tomasza Hutyry, jest psychiatra pan Marcin Dzierżanowski, kwiaciarnia „Maria” prowadzona przez panią Marysię Karkosz, co jej córka, Kasia, wyjechała do USA.
-
-        </p>
-        <p>
-            Miasteczko postawione zostało na odwiecznych polsko-litewskich bagnach. Z maniackim uporem cara Piotra Wielkiego budującego Petersburg „na trupach”. Jednak bagno osuszone zostało niedokładnie, a tu i ówdzie płyty chodnikowe rzucono po prostu na deski. Knieje wycięto, aż do brzegu Lasu W Którym Rosną Same Trujaki. Moczary i bagna pozostały pod płytkim, potiomkinowskim makijażem ulic. Bloki u nas trzeszczą w szwach i nigdy nie są całkiem równe, a Tesco… Ale o tym później! Dość powiedzieć, że Wymazane to jakby kawałek blokowiska z wielkiego miasta postawiony na bagnach i przylegający do lasu. W polu. W próżni. Jakby resztę miasta wymazano.
-        </p>
+<section id="flipbook">
+    <div class="hard cover page"> <img src="./img/cover.jpg"></div>
+    <div class="hard back-cover page"></div>
+    <div class="page-1"></div>
+    <div class="page-2"></div>
+    <div class="page-4"></div>
+    <div class="page-5"></div>
+    <div class="page-share">
+        <button id="share-button"> Share </button>
     </div>
-    <div> Page 2 </div>
-    <div> Page 3 </div>
-    <div> Page 4 </div>
-    <div class="hard back-cover"></div>
-    <div class="hard back-cover"></div>
-</div>
+    <div class="page-share">
+        <button id="code"> code </button>
+    </div>
+    <div class="hard back-cover page"></div>
+    <div class="hard back-cover page"></div>
+</section>
+
 
 
 </body>

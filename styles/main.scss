@@ -1,10 +1,21 @@
 body{
   overflow:hidden;
+  margin: 0;
 }
 
-#flipbook{
-  width: 960px;
+.offer-place {
+  margin-bottom: 3em;
+}
+.offer {
+  display: block;
+  margin: auto;
+}
+
+#flipbook {
+  width: 840px;
   height: 600px;
+  display: block;
+  margin: auto;
 }
 #flipbook p {
   text-align: justify;
@@ -16,7 +27,7 @@ body{
   background-color: red;
 }
 #flipbook .page{
-  width: 480px;
+  width: 420px;
   height: 600px;
   background-color:white;
   font-size: 20px;
@@ -73,4 +84,12 @@ body{
 
 #flipbook .back-cover {
   background-color: #5EC2D6 !important;
+}
+
+
+.hidden {
+  display: none;
+}
+.show {
+  display: inline;
 }

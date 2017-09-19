@@ -1,9 +1,19 @@
 body {
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 0; }
+
+.offer-place {
+  margin-bottom: 3em; }
+
+.offer {
+  display: block;
+  margin: auto; }
 
 #flipbook {
-  width: 960px;
-  height: 600px; }
+  width: 840px;
+  height: 600px;
+  display: block;
+  margin: auto; }
 
 #flipbook p {
   text-align: justify;
@@ -14,7 +24,7 @@ body {
   background-color: red; }
 
 #flipbook .page {
-  width: 480px;
+  width: 420px;
   height: 600px;
   background-color: white;
   font-size: 20px;
@@ -65,5 +75,11 @@ body {
 
 #flipbook .back-cover {
   background-color: #5EC2D6 !important; }
+
+.hidden {
+  display: none; }
+
+.show {
+  display: inline; }
 
 /*# sourceMappingURL=main.css.map */

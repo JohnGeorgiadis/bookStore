@@ -75,16 +75,17 @@ $(document).ready(function(){
     $("#flipbook").turn({
         width: 960,
         height: 600
-        },"center")
-        .bind("turning", function(event, page, view) {
-        if (page==1) {
-            event.preventDefault(); //will not happen at page 1
-        }else{
-            console.log("Turning the page to: "+page);
-        }
+        },"center");
+
+    $.getJSON('https://gist.githubusercontent.com/JohnGeorgiadis/d3bf915dc51d8e67622b7964d891caeb/raw/e1dfffe30ef513aad47f3cfa81c1c03918d711e8/witkowski',
+        function(data) {
+            $.each(data.pages, function(index, value) {
+                $( ".page-"+index ).append(value);
+            })
     });
 
     $("#share-button").click(function(){
+        console.log('clicked');
         FB.ui(
             {
                 method: 'share',
