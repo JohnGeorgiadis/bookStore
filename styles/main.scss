@@ -17,15 +17,23 @@ body{
   display: block;
   margin: auto;
 }
-#flipbook p {
+p {
   text-align: justify;
   margin: 15px;
   font-size: 16px;
 }
-
-#flipbook .cover {
-  background-color: red;
+#flipbook .shadow {
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  -moz-transition: -moz-box-shadow 0.5s;
+  -o-transition: -webkit-box-shadow 0.5s;
+  -ms-transition: -ms-box-shadow 0.5s;
+  -webkit-box-shadow: 0 0 10px #999;
+  -moz-box-shadow: 0 0 10px #999;
+  -ms-box-shadow: 0 0 10px #999;
+  -o-box-shadow: 0 0 10px #999;
+  box-shadow: 0 0 10px #999;
 }
+
 #flipbook .page{
   width: 420px;
   height: 600px;
@@ -86,6 +94,15 @@ body{
   background-color: #5EC2D6 !important;
 }
 
+.page-share p {
+    text-align: center;
+}
+
+.share-button {
+  color: #5dc2d5;
+  border: 1px solid;
+  background: transparent;
+}
 
 .hidden {
   display: none;
