@@ -7,6 +7,9 @@ body {
 section {
   margin: 50px 50px;
 }
+.book-section {
+  background-image: url("./img/outer-layer.png");
+}
 #flipbook {
   display: inline-block;
   width: 840px;
@@ -31,7 +34,7 @@ p {
 }
 .outer-layer {
   position: absolute;
-  left: 64px;
+  right: 472px;
   top: 40px;
   z-index: -1;
   height: 720px;

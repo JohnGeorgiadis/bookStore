@@ -31,7 +31,7 @@ $(document).ready(function(){
                     FB.ui(
                         {
                             method: 'share',
-                            href: 'https://developers.facebook.com/docs/',
+                            href: 'http://www.znak.com.pl/kartoteka,ksiazka,93897,Wymazane',
                             app_id: '206540289883972'
 
                         },
