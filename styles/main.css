@@ -2,23 +2,37 @@ body {
   overflow: hidden;
   margin: 0; }
 
-.offer-place {
-  margin-bottom: 3em; }
-
-.offer {
-  display: block;
-  margin: auto; }
+section {
+  margin: 50px 50px; }
 
 #flipbook {
+  display: inline-block;
   width: 840px;
   height: 600px;
-  display: block;
   margin: auto; }
 
 p {
-  text-align: justify;
   margin: 15px;
   font-size: 16px; }
+
+.content-img {
+  margin-top: 10px;
+  width: 430px; }
+
+.depth-effect {
+  position: absolute;
+  height: 700px;
+  width: 60px;
+  z-index: -1; }
+
+.outer-layer {
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  z-index: -1;
+  height: 720px;
+  width: 990px;
+  display: none; }
 
 #flipbook .shadow {
   -webkit-transition: -webkit-box-shadow 0.5s;
@@ -84,18 +98,9 @@ p {
 #flipbook .back-cover {
   background-color: #5EC2D6 !important; }
 
-.page-share p {
-  text-align: center; }
-
 .share-button {
   color: #5dc2d5;
   border: 1px solid;
   background: transparent; }
-
-.hidden {
-  display: none; }
-
-.show {
-  display: inline; }
 
 /*# sourceMappingURL=main.css.map */
