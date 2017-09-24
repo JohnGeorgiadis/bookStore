@@ -7,16 +7,26 @@ $(document).ready(function(){
         height: 700
         },"center")
         .bind("turning", function(event, page) {
-            console.log(page)
+
             if (page===1) {
                 $(".outer-layer").css("display", "none");
                 $(".depth-effect").css("display", "inline-block");
+                $(".left").css("opacity", "0.4");
             }
+
             if (page===2) {
                 $(".outer-layer").css("display", "inline-block");
                 $(".depth-effect").css("display", "none");
+                $(".left").css("opacity", "1");
             }
+
+            if (page===21) {
+                $(".right").css("opacity", "1");
+            }
+
             if (page===22) {
+                $(".right").css("opacity", "0.4");
+
                 $(".share-button").click(function() {
                     FB.ui(
                         {
@@ -29,23 +39,31 @@ $(document).ready(function(){
                         function(response) {
                             if (response && !response.error_message) {
                                 alert('Posting completed.');
+                                console.log(response);
+                                $.getJSON('https://gist.githubusercontent.com/JohnGeorgiadis/5ab6a196cad8a763bfca1e1bf8a19b85/raw/80385e511bda1f19d40150d139295780186c33b8/book-codes',
+                                    function(data) {
+                                        console.log(data);
+                                    }
+                                );
                             } else {
-                                // event.preventDefault();
+                                console.log(response);
                             }
                         }
                     );
                 })
             }
+
             if (page===24) {
                 event.preventDefault();
             }
         });
+    
+        $(".left").click(function () {
+            $("#flipbook").turn("previous");
+        });
 
-    // $.getJSON('https://gist.githubusercontent.com/JohnGeorgiadis/d3bf915dc51d8e67622b7964d891caeb/raw/e1dfffe30ef513aad47f3cfa81c1c03918d711e8/witkowski',
-    //     function(data) {
-    //         $.each(data.pages, function(index, value) {
-    //             $( ".page-"+index ).append(value);
-    //         })
-    // });
+        $(".right").click(function () {
+            $("#flipbook").turn("next");
+        });
 
 });

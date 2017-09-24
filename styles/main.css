@@ -1,6 +1,9 @@
 body {
   overflow: hidden;
-  margin: 0; }
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* !!! */ }
 
 section {
   margin: 50px 50px; }
@@ -27,12 +30,22 @@ p {
 
 .outer-layer {
   position: absolute;
-  left: 30px;
+  left: 64px;
   top: 40px;
   z-index: -1;
   height: 720px;
   width: 990px;
   display: none; }
+
+.navigation {
+  margin-top: 25px;
+  font-size: 46px;
+  color: #5dc1d5;
+  margin-right: 15px; }
+  .navigation .right {
+    margin-left: 40px; }
+  .navigation .left {
+    opacity: 0.4; }
 
 #flipbook .shadow {
   -webkit-transition: -webkit-box-shadow 0.5s;
@@ -101,6 +114,7 @@ p {
 .share-button {
   color: #5dc2d5;
   border: 1px solid;
-  background: transparent; }
+  background: transparent;
+  font-size: 24px; }
 
 /*# sourceMappingURL=main.css.map */
