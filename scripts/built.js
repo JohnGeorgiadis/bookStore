@@ -111,8 +111,8 @@ $(document).ready(function(){
                                 var code = Math.floor(Math.random() * (20 - 1 + 1)) + 1;
                                 $.getJSON('https://gist.githubusercontent.com/JohnGeorgiadis/5ab6a196cad8a763bfca1e1bf8a19b85/raw/6a1f1e83b5c8b6b23318a5cf669bcbf1dca4627e/book-codes',
                                     function(data) {
-                                        console.log("shared");
-                                        $( ".code-area" ).text(data[code])
+                                        $( ".code-area" ).text(data[code]);
+                                        $(".share-button").css("display","none");
                                     }
                                 );
                             } else {
