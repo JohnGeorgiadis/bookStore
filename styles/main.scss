@@ -3,22 +3,24 @@ body {
   margin: 0;
   padding: 0;
   text-align: center; /* !!! */
+  font-family: 'Lato';
 }
+
 section {
   margin: 50px 50px;
 }
-.book-section {
-  background-image: url("./img/outer-layer.png");
-}
+
 #flipbook {
   display: inline-block;
   width: 840px;
   height: 600px;
   margin: auto;
 }
+
 p {
   margin: 15px;
   font-size: 16px;
+  line-height: 35px;
 }
 
 .content-img {
@@ -127,16 +129,18 @@ p {
   background-color: #5EC2D6 !important;
 }
 
-.share-button, .shop-ref {
+.share-button, .shop-ref{
   color: #ffffff;
   border: 1px solid;
-  background: #5dc2d5;
-  font-size: 24px;
+  background: #65bfda;
+  font-size: 21px;
   text-decoration: none;
+  padding: 10px;
 }
 .code-area {
-  color: #5dc2d5;
+  color: #65bfda;
   border: 1px solid;
   background: transparent;
-  font-size: 24px;
+  font-size: 16px;
+  font-weight: lighter;
 }
