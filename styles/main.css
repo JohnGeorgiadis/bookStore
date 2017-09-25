@@ -120,6 +120,10 @@ p {
   font-size: 21px;
   text-decoration: none;
   padding: 10px; }
+  .share-button:hover, .shop-ref:hover {
+    color: #65bfda;
+    border: 1px solid;
+    background: #ffffff; }
 
 .code-area {
   color: #65bfda;
