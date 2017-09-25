@@ -46,8 +46,7 @@ $(document).ready(function(){
                                     }
                                 );
                             } else {
-                                alert("Please share the post to get your code");
-                                $( ".code-area" ).text("share the post to get the code")
+                                concole.log("Please share the post to get your code");
                             }
                         }
                     );
