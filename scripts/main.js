@@ -38,8 +38,8 @@ $(document).ready(function(){
                         // callback
                         function(response) {
                             if (response && !response.error_message) {
-                                var code = Math.floor(Math.random() * (20 - 1 + 1)) + 1;
-                                $.getJSON('https://gist.githubusercontent.com/JohnGeorgiadis/5ab6a196cad8a763bfca1e1bf8a19b85/raw/6a1f1e83b5c8b6b23318a5cf669bcbf1dca4627e/book-codes',
+                                var code = Math.floor(Math.random() * (499 - 1 + 1)) + 1;
+                                $.getJSON('https://gist.githubusercontent.com/JohnGeorgiadis/5ab6a196cad8a763bfca1e1bf8a19b85/raw/db4b60bde19ba44f06c169a3cc0ffb73c8b6e684/book-codes',
                                     function(data) {
                                         $( ".code-area" ).text(data[code]);
                                         $(".share-button").css("display","none");
