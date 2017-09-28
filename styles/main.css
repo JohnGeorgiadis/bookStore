@@ -7,36 +7,37 @@ body {
   font-family: 'Lato'; }
 
 section {
-  margin: 50px 50px; }
-
+  margin-top: 25px;
+}
 #flipbook {
   display: inline-block;
-  width: 840px;
-  height: 600px;
+  width: 300px;
+  height: 470px;
   margin: auto; }
 
 p {
   margin: 15px;
-  font-size: 16px;
-  line-height: 35px; }
+  font-size: 14px;
+  line-height: 25px; }
 
 .content-img {
   margin-top: 10px;
-  width: 430px; }
+  width: 270px;
+ }
 
 .depth-effect {
   position: absolute;
-  height: 700px;
-  width: 60px;
+  height: 465px;
+  width: 40px;
   z-index: -1; }
 
 .outer-layer {
   position: absolute;
-  right: 472px;
-  top: 40px;
+  right: 44px;
+  top: 17px;
   z-index: -1;
-  height: 720px;
-  width: 990px;
+  height: 485px;
+  width: 625px;
   display: none; }
 
 .navigation {
