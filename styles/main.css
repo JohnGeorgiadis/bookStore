@@ -6,14 +6,14 @@ body {
   /* !!! */
   font-family: 'Lato'; }
 
-section {
-  margin-top: 25px;
-}
 #flipbook {
   display: inline-block;
-  width: 300px;
+  width: 325px;
   height: 470px;
   margin: auto; }
+
+section {
+  margin-top: 25px; }
 
 p {
   margin: 15px;
@@ -21,24 +21,28 @@ p {
   line-height: 25px; }
 
 .content-img {
-  margin-top: 10px;
-  width: 270px;
- }
+  margin-top: 25px;
+  width: 270px; }
+
+.paging {
+  font-size: 12px;
+  opacity: 0.6; }
 
 .depth-effect {
   position: absolute;
   height: 465px;
-  width: 40px;
-  z-index: -1; }
+  width: 35px;
+  z-index: -1;
+  display: none !important; }
 
 .outer-layer {
   position: absolute;
-  right: 44px;
-  top: 17px;
+  right: 30px;
+  top: 16px;
   z-index: -1;
-  height: 485px;
-  width: 625px;
-  display: none; }
+  height: 488px;
+  width: 675px;
+  display: none !important; }
 
 .navigation {
   margin-top: 25px;

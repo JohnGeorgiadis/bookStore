@@ -3,7 +3,7 @@ var $ = jQuery;
 $(document).ready(function(){
 
     $("#flipbook").turn({
-        width: 600,
+        width: 650,
         height: 470
         },"center")
         .bind("turning", function(event, page) {
